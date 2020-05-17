@@ -17,6 +17,7 @@ class CreateSpecialitiesTable extends Migration
             $table->increments('id');
             $table->string('speciality');
             $table->timestamps();
+            $table->timestamp('deleted_at')->nullable();
         });
     }
 
